@@ -27,3 +27,26 @@ jobs:
 
       - name: Run automated tests
         run: python -m pytest -v
+
+  docker-build:
+    needs: test
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Download project code
+        uses: actions/checkout@v4
+
+      - name: Build Docker image
+        run: docker build -t government-ai-evidence:ci .
+
+      - name: Test container health
+        run: |
+          docker run -d --name evidence-test -p 8080:8080 government-ai-evidence:ci
+          for i in $(seq 1 20); do
+            if curl --fail http://localhost:8080/health; then
+              exit 0
+            fi
+            sleep 2
+          done
+          docker logs evidence-test
+          exit 1
