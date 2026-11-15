@@ -24,3 +24,10 @@ def ask(data: Question):
         "answer": "The evidence retrieval system is being built.",
         "status": "development"
     }
+
+from evidence_service import retrieve_evidence
+
+
+@app.post("/evidence/query")
+def evidence_query(data: Question):
+    return retrieve_evidence(data.question)

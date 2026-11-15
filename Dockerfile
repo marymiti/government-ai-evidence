@@ -7,7 +7,9 @@ COPY requirements.txt .
 
 RUN pip install --no-cache-dir -r requirements.txt
 
-COPY main.py .
+COPY main.py evidence_service.py ./
+
+COPY data/ ./data/
 
 EXPOSE 8080
 

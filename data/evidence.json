@@ -1,0 +1,21 @@
+
+[
+  {
+    "id": "AI-001",
+    "section": "Principle 4: Human control",
+    "text": "Government AI systems should maintain meaningful human control. High-risk AI-influenced decisions should be subject to human validation. Teams should test systems before deployment and provide mechanisms for human intervention and user feedback.",
+    "source": "https://www.gov.uk/government/publications/ai-playbook-for-the-uk-government/artificial-intelligence-playbook-for-the-uk-government-html"
+  },
+  {
+    "id": "AI-002",
+    "section": "Principle 5: AI lifecycle",
+    "text": "Teams should manage the AI lifecycle, establish performance metrics, test systems under varied scenarios, including unusual cases, and use red teaming to identify weaknesses and unexpected behaviour.",
+    "source": "https://www.gov.uk/government/publications/ai-playbook-for-the-uk-government/artificial-intelligence-playbook-for-the-uk-government-html"
+  },
+  {
+    "id": "AI-003",
+    "section": "Transparency and explainability",
+    "text": "Government organisations should consider transparency before deploying AI systems. AI projects should maintain documentation of data provenance, design decisions, assurance processes and evaluations to support accountability and auditing.",
+    "source": "https://www.gov.uk/government/publications/ai-playbook-for-the-uk-government/artificial-intelligence-playbook-for-the-uk-government-html"
+  }
+]
